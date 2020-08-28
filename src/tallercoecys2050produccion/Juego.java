@@ -94,6 +94,7 @@ public class Juego {
     }
     
     public void juegoCola(){
+        System.out.println("Esta linea no estaba");
         System.out.println("--Inicio cola--");
         Pokemon p7 = new Pokemon(7,"Squirtle");
         Pokemon p8 = new Pokemon(8,"Wartortle");
