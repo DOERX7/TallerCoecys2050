@@ -6,6 +6,7 @@
 package tallercoecys2050produccion;
 
 import TDA.Cola;
+import TDA.DoblementeEnlazada;
 import TDA.ListaEnlazada;
 import TDA.Pila;
 
@@ -15,14 +16,14 @@ import TDA.Pila;
  */
 class Init {
     private ListaEnlazada listaPokemonesKanto;
-    private ListaEnlazada listaPokemonesJontho;   
     
     private Pila pilaPokemon;
     private Cola colaPokemon;
     
+    private DoblementeEnlazada listaPokemonesJontho;
     public Init(){
         listaPokemonesKanto = new ListaEnlazada();
-        listaPokemonesJontho = new ListaEnlazada();   
+        listaPokemonesJontho = new DoblementeEnlazada();   
         pilaPokemon = new Pila();
         colaPokemon = new Cola();
     }
@@ -35,11 +36,11 @@ class Init {
         this.listaPokemonesKanto = listaPokemonesKanto;
     }
 
-    public ListaEnlazada getListaPokemonesJontho() {
+    public DoblementeEnlazada getListaPokemonesJontho() {
         return listaPokemonesJontho;
     }
 
-    public void setListaPokemonesJontho(ListaEnlazada listaPokemonesJontho) {
+    public void setListaPokemonesJontho(DoblementeEnlazada listaPokemonesJontho) {
         this.listaPokemonesJontho = listaPokemonesJontho;
     }
 

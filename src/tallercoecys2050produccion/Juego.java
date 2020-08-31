@@ -15,7 +15,8 @@ public class Juego {
         this.i=i;
 //        juegoListaEnlazada();
 //        juegoPila();
-        juegoCola();
+//        juegoCola();
+        juegoDoblementeEnlazada();
     }
     
     
@@ -148,7 +149,167 @@ public class Juego {
         System.out.println("--Fin cola--");
     }
     
-    
+    public void juegoDoblementeEnlazada(){
+        System.out.println("Inserciones");
+        Pokemon p1 = new Pokemon(1,"Chikorita");
+        Pokemon p2 = new Pokemon(2,"Bayleef");
+        Pokemon p3 = new Pokemon(3,"Meganium");
+        Pokemon p4 = new Pokemon(4,"Cyndaquil");
+        Pokemon p5 = new Pokemon(5,"Quilava");
+        Pokemon p6 = new Pokemon(6,"Typhlosion");
+        Pokemon p7 = new Pokemon(7,"Totodile");
+        System.out.println("Inicia juego Doblemente enlazada");
+        System.out.println("---Inserciones al principio---");
+        i.getListaPokemonesJontho().insertarAlPrincipio(p1);
+        i.getListaPokemonesJontho().insertarAlPrincipio(p2);
+        i.getListaPokemonesJontho().insertarAlPrincipio(p3);
+        i.getListaPokemonesJontho().insertarAlPrincipio(p4);
+        i.getListaPokemonesJontho().insertarAlPrincipio(p5);
+        i.getListaPokemonesJontho().insertarAlPrincipio(p6);
+        i.getListaPokemonesJontho().insertarAlPrincipio(p7);
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("Eliminando especificamente por ID");
+        System.out.println("El primero");
+        i.getListaPokemonesJontho().eliminarPorNombre("Chikorita");
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("El ultimo");
+        i.getListaPokemonesJontho().eliminarPorNombre("Typhlosion");
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("Los que quedan");
+        i.getListaPokemonesJontho().eliminarPorNombre("Bayleef");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Totodile");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Cyndaquil");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Meganium");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Quilava");
+        i.getListaPokemonesJontho().mostrar();
+        
+        System.out.println("---Inserciones al final---");
+        i.getListaPokemonesJontho().insertarAlFinal(p1);
+        i.getListaPokemonesJontho().insertarAlFinal(p2);
+        i.getListaPokemonesJontho().insertarAlFinal(p3);
+        i.getListaPokemonesJontho().insertarAlFinal(p4);
+        i.getListaPokemonesJontho().insertarAlFinal(p5);
+        i.getListaPokemonesJontho().insertarAlFinal(p6);
+        i.getListaPokemonesJontho().insertarAlFinal(p7);
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("Eliminando especificamente por ID");
+        System.out.println("El primero");
+        i.getListaPokemonesJontho().eliminarPorNombre("Chikorita");
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("El ultimo");
+        i.getListaPokemonesJontho().eliminarPorNombre("Typhlosion");
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("Los que quedan");
+        i.getListaPokemonesJontho().eliminarPorNombre("Bayleef");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Totodile");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Cyndaquil");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Meganium");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Quilava");
+        i.getListaPokemonesJontho().mostrar();
+        
+        System.out.println("--- Insercion ordenada numericamente ---");
+        i.getListaPokemonesJontho().insertarNumericamente(p4);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarNumericamente(p6);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarNumericamente(p1);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarNumericamente(p7);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarNumericamente(p3);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarNumericamente(p2);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarNumericamente(p5);
+        i.getListaPokemonesJontho().mostrar();
+        
+        System.out.println("Eliminando especificamente por ID");
+        System.out.println("El primero");
+        i.getListaPokemonesJontho().eliminarPorNombre("Chikorita");
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("El ultimo");
+        i.getListaPokemonesJontho().eliminarPorNombre("Typhlosion");
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("Los que quedan");
+        i.getListaPokemonesJontho().eliminarPorNombre("Bayleef");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Totodile");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Cyndaquil");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Meganium");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Quilava");
+        i.getListaPokemonesJontho().mostrar();
+        
+
+        System.out.println("--- Insercion ordenada alfabeticamente DESC ---");
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoDesc(p4);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoDesc(p6);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoDesc(p1);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoDesc(p7);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoDesc(p3);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoDesc(p2);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoDesc(p5);
+        i.getListaPokemonesJontho().mostrar();
+        
+                System.out.println("Eliminando especificamente por ID");
+        System.out.println("El primero");
+        i.getListaPokemonesJontho().eliminarPorNombre("Chikorita");
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("El ultimo");
+        i.getListaPokemonesJontho().eliminarPorNombre("Typhlosion");
+        i.getListaPokemonesJontho().mostrar();
+        System.out.println("Los que quedan");
+        i.getListaPokemonesJontho().eliminarPorNombre("Bayleef");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Totodile");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Cyndaquil");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Meganium");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().eliminarPorNombre("Quilava");
+        i.getListaPokemonesJontho().mostrar();
+        
+        System.out.println("--- Insercion ordenada alfabeticamente ASC ---");
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoAsc(p4);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoAsc(p6);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoAsc(p1);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoAsc(p7);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoAsc(p3);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoAsc(p2);
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().insertarAlfabeticamenteOrdenadoAsc(p5);
+        i.getListaPokemonesJontho().mostrar();
+        
+        System.out.println("Modificar");
+        i.getListaPokemonesJontho().modificar("Totodile","Charizardo");
+        i.getListaPokemonesJontho().mostrar();
+        i.getListaPokemonesJontho().modificar("Chikorita","La pera");
+        i.getListaPokemonesJontho().mostrar();
+        
+        System.out.println("Finaliza juego Doblemente enlazada");
+    }
     
     
 }
